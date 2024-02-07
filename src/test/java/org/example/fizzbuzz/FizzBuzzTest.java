@@ -38,6 +38,7 @@ class FizzBuzzTest {
     void when_fizzbuzz_multiple_of_3_and_5_then() {
         runFor(15, "fizzbuzz");
         runFor(30, "fizzbuzz");
+        runFor(45, "fizzbuzz");
     }
 
 
