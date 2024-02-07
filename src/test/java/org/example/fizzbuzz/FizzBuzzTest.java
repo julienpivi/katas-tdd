@@ -13,7 +13,7 @@ class FizzBuzzTest {
     FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
-    void when_fizzbuzz_not_multiple_of_3_then() {
+    void when_fizzbuzz_not_multiple_of_3_and_5_then() {
         runFor(1, "1");
         runFor(2, "2");
         runFor(4, "4");
@@ -30,7 +30,13 @@ class FizzBuzzTest {
     void when_fizzbuzz_multiple_of_5_then() {
         runFor(5, "buzz");
         runFor(10, "buzz");
-        runFor(15, "buzz");
+        runFor(20, "buzz");
+    }
+
+
+    @Test
+    void when_fizzbuzz_multiple_of_3_and_5_then() {
+        runFor(15, "fizzbuzz");
     }
 
 

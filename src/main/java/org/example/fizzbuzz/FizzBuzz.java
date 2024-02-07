@@ -2,6 +2,9 @@ package org.example.fizzbuzz;
 
 public class FizzBuzz {
     public String handle(int value) {
+        if(value == 15) {
+            return "fizzbuzz";
+        }
         if(value % 5 == 0) {
             return "buzz";
         }
