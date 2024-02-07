@@ -26,6 +26,11 @@ class FizzBuzzTest {
         runFor(9, "fizz");
     }
 
+    @Test
+    void when_fizzbuzz_5_then() {
+        runFor(5, "buzz");
+    }
+
 
     private void runFor(int valueToTest, String expectedValue) {
         //act
