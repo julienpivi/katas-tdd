@@ -42,6 +42,8 @@ class LeapYearTest {
     @Test
     void when_year_not_divide_by_4_then_not_leap() {
         assertFalseFor(2017);
+        assertFalseFor(2018);
+        assertFalseFor(2019);
     }
 
     private static void assertTrueFor(int value) {
