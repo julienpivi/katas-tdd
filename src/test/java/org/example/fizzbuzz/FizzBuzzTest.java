@@ -39,6 +39,11 @@ class FizzBuzzTest {
         runFor(6, "fizz");
     }
 
+    @Test
+    void when_fizzbuzz9_then() {
+        runFor(9, "fizz");
+    }
+
     private void runFor(int valueToTest, String expectedValue) {
         //act
         String fizzBuzzValue = fizzBuzz.handle(valueToTest);
