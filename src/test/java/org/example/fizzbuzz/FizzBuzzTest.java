@@ -10,37 +10,29 @@ import org.junit.jupiter.api.Test;
  * For numbers that are multiples of both 3 and 5, it returns FizzBuzz.
  */
 class FizzBuzzTest {
-
+    FizzBuzz fizzBuzz = new FizzBuzz();
     @Test
     void when_fizzbuzz1_then() {
         //prepare
-        int value  = 1;
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        //act
-        String fizzBuzzValue = fizzBuzz.handle(value);
-        //assert
-        Assertions.assertEquals("1", fizzBuzzValue);
+        runFor(1, "1");
     }
 
     @Test
     void when_fizzbuzz2_then() {
         //prepare
-        int value  = 2;
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        //act
-        String fizzBuzzValue = fizzBuzz.handle(value);
-        //assert
-        Assertions.assertEquals("2", fizzBuzzValue);
+        runFor(2, "2");
     }
 
     @Test
     void when_fizzbuzz4_then() {
         //prepare
-        int value  = 4;
-        FizzBuzz fizzBuzz = new FizzBuzz();
+        runFor(4, "4");
+    }
+
+    private void runFor(int valueToTest, String expectedValue) {
         //act
-        String fizzBuzzValue = fizzBuzz.handle(value);
+        String fizzBuzzValue = fizzBuzz.handle(valueToTest);
         //assert
-        Assertions.assertEquals("4", fizzBuzzValue);
+        Assertions.assertEquals(expectedValue, fizzBuzzValue);
     }
 }
