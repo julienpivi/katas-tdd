@@ -19,13 +19,16 @@ class LeapYearTest {
 
     @Test
     void when_year_divisible_by_400_then_leap_years() {
-        //prepare
-        int value = 2000;
-        LeapYear leapYear = new LeapYear();
+        assertTrueFor(1600);
+        assertTrueFor(2000);
+        assertTrueFor(4000);
+    }
 
+    private static void assertTrueFor(int value) {
+        //Prepare
+        LeapYear leapYear = new LeapYear();
         //act
         boolean isLeapYear =  leapYear.detect(value);
-
         //assert
         Assertions.assertTrue(isLeapYear);
     }
