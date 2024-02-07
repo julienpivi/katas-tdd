@@ -34,7 +34,7 @@ class LeapYearTest {
 
     @Test
     void when_year_divide_by_4_and_not_by_100_then_leap() {
-        assertTrueFor(2008); // Nothing to change in implementation ?!
+        assertTrueFor(2008);
         assertTrueFor(2012);
         assertTrueFor(2016);
     }
