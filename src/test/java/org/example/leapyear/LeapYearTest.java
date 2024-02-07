@@ -24,6 +24,11 @@ class LeapYearTest {
         assertTrueFor(4000);
     }
 
+    @Test
+    void when_year_divide_by_100_and_not_by_400_then_not_leap() {
+        assertFalseFor(1700);
+    }
+
     private static void assertTrueFor(int value) {
         //Prepare
         LeapYear leapYear = new LeapYear();
@@ -31,6 +36,15 @@ class LeapYearTest {
         boolean isLeapYear =  leapYear.detect(value);
         //assert
         Assertions.assertTrue(isLeapYear);
+    }
+
+    private static void assertFalseFor(int value) {
+        //Prepare
+        LeapYear leapYear = new LeapYear();
+        //act
+        boolean isLeapYear =  leapYear.detect(value);
+        //assert
+        Assertions.assertFalse(isLeapYear);
     }
 
 
