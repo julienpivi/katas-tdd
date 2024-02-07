@@ -32,4 +32,15 @@ class FizzBuzzTest {
         //assert
         Assertions.assertEquals("2", fizzBuzzValue);
     }
+
+    @Test
+    void when_fizzbuzz4_then() {
+        //prepare
+        int value  = 4;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //act
+        String fizzBuzzValue = fizzBuzz.handle(value);
+        //assert
+        Assertions.assertEquals("4", fizzBuzzValue);
+    }
 }
