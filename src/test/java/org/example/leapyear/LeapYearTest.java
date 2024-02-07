@@ -29,6 +29,7 @@ class LeapYearTest {
         assertFalseFor(1700);
         assertFalseFor(1800);
         assertFalseFor(1900);
+        assertFalseFor(2100);
     }
 
     private static void assertTrueFor(int value) {

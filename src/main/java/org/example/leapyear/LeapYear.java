@@ -2,7 +2,7 @@ package org.example.leapyear;
 
 public class LeapYear {
     public boolean detect(int value) {
-        if(value == 1700 || value == 1800 || value == 1900) { //need to refactor
+        if(value % 10 == 0 && !(value % 400 == 0)) { //need to refactor
             return false;
         }
         return true;
