@@ -2,6 +2,10 @@ package org.example.fizzbuzz;
 
 public class FizzBuzz {
     public String handle(int value) {
-        return "1";
+        if(value == 1) {
+            return "1";
+        } else {
+            return "2";
+        }
     }
 }
