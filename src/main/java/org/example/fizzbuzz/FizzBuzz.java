@@ -2,7 +2,7 @@ package org.example.fizzbuzz;
 
 public class FizzBuzz {
     public String handle(int value) {
-        if(value == 5 || value == 10 || value == 15) { //Need to refactor now.
+        if(value % 5 == 0) {
             return "buzz";
         }
         if (value % 3 == 0) {

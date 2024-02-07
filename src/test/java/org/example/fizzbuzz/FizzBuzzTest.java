@@ -27,19 +27,12 @@ class FizzBuzzTest {
     }
 
     @Test
-    void when_fizzbuzz_5_then() {
+    void when_fizzbuzz_multiple_of_5_then() {
         runFor(5, "buzz");
-    }
-
-    @Test
-    void when_fizzbuzz_10_then() {
         runFor(10, "buzz");
-    }
-
-    @Test
-    void when_fizzbuzz_15_then() {
         runFor(15, "buzz");
     }
+
 
 
 
