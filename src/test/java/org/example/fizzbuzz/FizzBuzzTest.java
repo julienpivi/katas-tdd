@@ -42,8 +42,6 @@ class FizzBuzzTest {
     }
 
 
-
-
     private void runFor(int valueToTest, String expectedValue) {
         //act
         String fizzBuzzValue = fizzBuzz.handle(valueToTest);
