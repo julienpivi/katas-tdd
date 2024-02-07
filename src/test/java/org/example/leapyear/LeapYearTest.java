@@ -1,5 +1,8 @@
 package org.example.leapyear;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 /**
  * User Story:
  * As a user, I want to know if a year is a leap year, So that I can plan for an extra day
@@ -13,6 +16,19 @@ package org.example.leapyear;
  */
 class LeapYearTest {
 
+
+    @Test
+    void when_year_divisible_by_400_then_leap_years() {
+        //prepare
+        int value = 2000;
+        LeapYear leapYear = new LeapYear();
+
+        //act
+        boolean isLeapYear =  leapYear.detect(value);
+
+        //assert
+        Assertions.assertTrue(isLeapYear);
+    }
 
 
 }
