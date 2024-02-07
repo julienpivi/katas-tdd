@@ -11,38 +11,21 @@ import org.junit.jupiter.api.Test;
  */
 class FizzBuzzTest {
     FizzBuzz fizzBuzz = new FizzBuzz();
+
     @Test
-    void when_fizzbuzz1_then() {
-        //prepare
+    void when_fizzbuzz_not_multiple_of_3_then() {
         runFor(1, "1");
-    }
-
-    @Test
-    void when_fizzbuzz2_then() {
-        //prepare
         runFor(2, "2");
-    }
-
-    @Test
-    void when_fizzbuzz4_then() {
-        //prepare
         runFor(4, "4");
     }
 
     @Test
-    void when_fizzbuzz3_then() {
+    void when_fizzbuzz_multiple_of_3_then() {
         runFor(3, "fizz");
-    }
-
-    @Test
-    void when_fizzbuzz6_then() {
         runFor(6, "fizz");
-    }
-
-    @Test
-    void when_fizzbuzz9_then() {
         runFor(9, "fizz");
     }
+
 
     private void runFor(int valueToTest, String expectedValue) {
         //act
