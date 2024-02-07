@@ -29,6 +29,7 @@ class FizzBuzzTest {
     @Test
     void when_fizzbuzz_5_then() {
         runFor(5, "buzz");
+        runFor(10, "buzz");
     }
 
 
