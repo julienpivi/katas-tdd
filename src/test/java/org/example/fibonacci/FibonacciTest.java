@@ -11,5 +11,9 @@ public class FibonacciTest {
         Assertions.assertEquals(0, fibonacciNumber);
     }
 
-
+    @Test
+    void when_second_index_asked_then_one() {
+        int fibonacciNumber  = FibonacciNumberGenerator.generate(1);
+        Assertions.assertEquals(1, fibonacciNumber);
+    }
 }

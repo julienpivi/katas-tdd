@@ -4,6 +4,9 @@ public final class FibonacciNumberGenerator {
 
 
     public static int generate(int i) {
-        return 0;
+        if(i == 0) {
+            return 0;
+        }
+        return 1;
     }
 }
