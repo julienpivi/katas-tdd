@@ -1,7 +1,7 @@
 # katas-tdd
 
 Some Katas, in order to discover TDD method.
-Each step has been commited seperatly.
+Each step has been committed separately.
 
 ## Katas listed 
   * [Fizz Buzz](https://github.com/julienpivi/katas-tdd/tree/master/src/test/java/org/example/fizzbuzz)

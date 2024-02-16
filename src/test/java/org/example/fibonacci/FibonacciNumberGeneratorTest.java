@@ -3,7 +3,7 @@ package org.example.fibonacci;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class FibonacciTest {
+class FibonacciNumberGeneratorTest {
 
     @Test
     void when_first_index_asked_then_zero(){
@@ -22,6 +22,13 @@ public class FibonacciTest {
         int fibonacciNumber  = FibonacciNumberGenerator.generate(2);
         Assertions.assertEquals(1, fibonacciNumber);
     }
+
+    @Test
+    void when_fourth_index_asked_then_two(){
+        int fibonacciNumber  = FibonacciNumberGenerator.generate(3);
+        Assertions.assertEquals(2, fibonacciNumber);
+    }
+
 
 
 }
