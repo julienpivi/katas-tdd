@@ -30,10 +30,14 @@ class FibonacciNumberGeneratorTest {
     }
 
     @Test
-    void when_fourth_index_asked_then_three(){
+    void when_fifth_index_asked_then_three(){
         int fibonacciNumber  = FibonacciNumberGenerator.generate(4);
         Assertions.assertEquals(3, fibonacciNumber);
     }
 
-
+    @Test
+    void when_ten_index_asked_then_thirty_four(){
+        int fibonacciNumber  = FibonacciNumberGenerator.generate(9);
+        Assertions.assertEquals(34, fibonacciNumber);
+    }
 }
