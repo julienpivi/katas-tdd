@@ -10,6 +10,10 @@ public final class FibonacciNumberGenerator {
         if(i == 3) {
             return 2;
         }
+        if(i == 4) {
+            return 3;
+        }
+        //Triple duplication, it's time to refactor
         return 1;
     }
 }

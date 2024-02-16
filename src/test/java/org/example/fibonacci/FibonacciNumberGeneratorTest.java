@@ -29,6 +29,11 @@ class FibonacciNumberGeneratorTest {
         Assertions.assertEquals(2, fibonacciNumber);
     }
 
+    @Test
+    void when_fourth_index_asked_then_three(){
+        int fibonacciNumber  = FibonacciNumberGenerator.generate(4);
+        Assertions.assertEquals(3, fibonacciNumber);
+    }
 
 
 }
