@@ -1,4 +1,4 @@
-package org.example.leapyear;
+package org.example.tdd1.leapyear;
 
 import java.util.Scanner;
 

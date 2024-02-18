@@ -1,5 +1,6 @@
-package org.example.fizzbuzz;
+package org.example.tdd1.fizzbuzz;
 
+import org.example.tdd1.fizzbuzz.FizzBuzz;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

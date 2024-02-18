@@ -1,4 +1,4 @@
-package org.example.fizzbuzz;
+package org.example.tdd1.fizzbuzz;
 
 public class FizzBuzz {
 

@@ -1,5 +1,6 @@
-package org.example.leapyear;
+package org.example.tdd1.leapyear;
 
+import org.example.tdd1.leapyear.LeapYear;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
