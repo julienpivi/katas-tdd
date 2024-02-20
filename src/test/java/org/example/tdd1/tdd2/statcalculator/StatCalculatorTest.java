@@ -110,4 +110,18 @@ class StatCalculatorTest {
 		//Assert
 		Assertions.assertEquals(expectedValue, actualValue);
 	}
+
+	@Test
+	void find_average_value_in_a_sequence() {
+		//Arrange
+		int[] sequence = {6,9,15,-2,92,11};
+		double expectedValue = 21.833;
+		StatCalculator statCalculator = new StatCalculator();
+
+		//Act
+		double actualValue = statCalculator.averageValue(sequence);
+
+		//Assert
+		Assertions.assertEquals(expectedValue, actualValue, 0.001);
+	}
 }
