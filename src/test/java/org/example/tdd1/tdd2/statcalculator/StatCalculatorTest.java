@@ -52,5 +52,47 @@ class StatCalculatorTest {
 	}
 
 
+	@Test
+	void find_max_value_in_sequence_number_test1() {
+		//Arrange
+		int[] sequence = {6,9,15,-2,92,11};
+		int expectedValue = 92;
+		StatCalculator statCalculator = new StatCalculator();
+
+		//Act
+		int actualValue = statCalculator.findMax(sequence);
+
+		//Assert
+		Assertions.assertEquals(expectedValue, actualValue );
+	}
+
+	@Test
+	void find_max_value_in_sequence_number_whole_negative() {
+		//Arrange
+		int[] sequence = {-10,-9,-35,-2,-5,-11};
+		int expectedValue = -2;
+		StatCalculator statCalculator = new StatCalculator();
+
+		//Act
+		int actualValue = statCalculator.findMax(sequence);
+
+		//Assert
+		Assertions.assertEquals(expectedValue, actualValue );
+	}
+
+	@Test
+	void find_max_value_in_sequence_number_all_the_same() {
+		//Arrange
+		int[] sequence = {5,5,5,5,5,5};
+		int expectedValue = 5;
+		StatCalculator statCalculator = new StatCalculator();
+
+		//Act
+		int actualValue = statCalculator.findMax(sequence);
+
+		//Assert
+		Assertions.assertEquals(expectedValue, actualValue );
+	}
+
 
 }
