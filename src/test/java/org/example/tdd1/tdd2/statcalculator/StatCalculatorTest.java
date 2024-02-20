@@ -97,5 +97,17 @@ class StatCalculatorTest {
 		Assertions.assertEquals(expectedValue, actualValue );
 	}
 
+	@Test
+	void find_number_element_in_a_sequence() {
+		//Arrange
+		int[] sequence = {6,9,15,-2,92,11};
+		int expectedValue = 6;
+		StatCalculator statCalculator = new StatCalculator();
 
+		//Act
+		int actualValue = statCalculator.numberOfElement(sequence);
+
+		//Assert
+		Assertions.assertEquals(expectedValue, actualValue);
+	}
 }

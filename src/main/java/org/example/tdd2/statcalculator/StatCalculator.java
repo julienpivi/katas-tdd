@@ -24,4 +24,8 @@ public class StatCalculator {
 		}
 		return initialNumber;
 	}
+
+	public int numberOfElement(int[] sequence) {
+		return sequence.length;
+	}
 }
