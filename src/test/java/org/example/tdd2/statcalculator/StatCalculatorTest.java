@@ -1,9 +1,15 @@
 package org.example.tdd2.statcalculator;
 
-import org.example.tdd2.statcalculator.StatCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+/**
+ * Process a sequence of integer numbers to determine following statics:
+ *  - Minimum value
+ *  - Maximum value
+ *  - Number of elements in the sequence
+ *   - Average value
+ */
 class StatCalculatorTest {
 
 	@Test
