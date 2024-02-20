@@ -1,5 +1,6 @@
-package org.example.fibonacci;
+package org.example.tdd1.fibonacci;
 
+import org.example.tdd1.fibonacci.FibonacciNumberGenerator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

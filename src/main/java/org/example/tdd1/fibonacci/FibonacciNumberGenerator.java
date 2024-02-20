@@ -1,4 +1,4 @@
-package org.example.fibonacci;
+package org.example.tdd1.fibonacci;
 
 import java.util.ArrayList;
 import java.util.List;
