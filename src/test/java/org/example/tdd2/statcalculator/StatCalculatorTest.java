@@ -1,4 +1,4 @@
-package org.example.tdd1.tdd2.statcalculator;
+package org.example.tdd2.statcalculator;
 
 import org.example.tdd2.statcalculator.StatCalculator;
 import org.junit.jupiter.api.Assertions;
