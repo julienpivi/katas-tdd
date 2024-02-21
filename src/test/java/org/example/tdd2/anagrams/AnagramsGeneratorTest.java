@@ -13,10 +13,10 @@ class AnagramsGeneratorTest {
 	@Test
 	void when_my_string_is_null_then_return_empty() {
 		//arrange
-		String expectedString = null;
+		String expectedString = "";
 
 		//act
-		String actualString = AnagramsGenerator.generate(expectedString);
+		String actualString = AnagramsGenerator.generate(null);
 
 		//assert
 		Assertions.assertEquals(expectedString, actualString);
