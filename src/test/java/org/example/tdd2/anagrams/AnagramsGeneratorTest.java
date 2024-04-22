@@ -11,7 +11,6 @@ import java.util.List;
  */
 class AnagramsGeneratorTest {
 
-
 	@Test
 	void when_my_string_is_null_then_return_empty() {
 		//arrange
@@ -37,7 +36,6 @@ class AnagramsGeneratorTest {
 		Assertions.assertEquals(1, actualString.size());
 		Assertions.assertEquals(expectedString, actualString.get(0));
 	}
-
 
 	@Test
 	void when_my_string_size_one_then_only_one_anagram_is_itself() {
@@ -66,5 +64,18 @@ class AnagramsGeneratorTest {
 		Assertions.assertTrue(expectedStrings.containsAll(actualStrings));
 	}
 
+	@Test
+	void when_my_string_size_three_then_6_anagram() {
+		//arrange
+		String intialString = "abc";
+		List<String> expectedStrings = List.of("abc", "bac", "bca", "acb", "cab", "cba");
+
+		//act
+		List<String> actualStrings = AnagramsGenerator.generate(intialString);
+
+		//assert
+		Assertions.assertEquals(expectedStrings.size(), actualStrings.size());
+		Assertions.assertTrue(expectedStrings.containsAll(actualStrings));
+	}
 
 }
