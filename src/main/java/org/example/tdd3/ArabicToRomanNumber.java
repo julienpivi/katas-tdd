@@ -6,7 +6,7 @@ import java.util.Map;
 public class ArabicToRomanNumber {
 
 	private static final Map<Integer, String> arabicUnitsToRomanUnits = new HashMap<>();
-	private static final Map<Integer, String> arabicTensToRomanTens = new HashMap<>();
+	private static final Map<Integer, String> arabicTensToRomanTens   = new HashMap<>();
 	private static final Map<Integer, String> arabicCentsToRomanCents = new HashMap<>();
 
 	static {
@@ -42,39 +42,35 @@ public class ArabicToRomanNumber {
 	}
 
 	public static String convert(int number) {
-		if (number/100 >= 1) {
-			int cents = Math.divideExact(number, 100);
-			String centsRoman = arabicCentsToRomanCents.get(cents * 100);
-			int floorMod = Math.floorMod(number, 100);
-			String floorRoman = "";
-			if(floorMod > 0) {
-				int tens = Math.divideExact(floorMod, 10);
-				String tensRoman = arabicTensToRomanTens.get(tens * 10);
-				int unit = Math.floorMod(floorMod, 10);
-				String unitRoman="";
-				if(unit > 0) {
-					unitRoman = arabicUnitsToRomanUnits.get(unit);
-				}
-				floorRoman = tensRoman + unitRoman;
-			}
-
-			return centsRoman + floorRoman;
+		if (number / 100 >= 1) {
+			return convertCentsNumber(number);
 		}
-		if(number/10 >= 1) {
-			int tens = Math.divideExact(number, 10);
-			String tensRoman = arabicTensToRomanTens.get(tens * 10);
-			int unit = Math.floorMod(number, 10);
-			String unitRoman="";
-			if(unit > 0) {
-				unitRoman = arabicUnitsToRomanUnits.get(unit);
-			}
-			return tensRoman+unitRoman;
+		if (number / 10 >= 1) {
+			return convertTensNumber(number);
 		}
 		return arabicUnitsToRomanUnits.get(number);
 	}
 
-	public static void main(String[] args) {
-		System.out.println(Math.divideExact(42, 10));
-		System.out.println(Math.floorMod(44, 10));
+	private static String convertCentsNumber(int number) {
+		int cents = Math.divideExact(number, 100);
+		String centsRoman = arabicCentsToRomanCents.get(cents * 100);
+		int floorMod = Math.floorMod(number, 100);
+		String tensNumberRoman = "";
+		if (floorMod > 0) {
+			tensNumberRoman = convertTensNumber(floorMod);
+		}
+		return centsRoman + tensNumberRoman;
 	}
+
+	private static String convertTensNumber(int number) {
+		int tens = Math.divideExact(number, 10);
+		String tensRoman = arabicTensToRomanTens.get(tens * 10);
+		int unit = Math.floorMod(number, 10);
+		String unitRoman = "";
+		if (unit > 0) {
+			unitRoman = arabicUnitsToRomanUnits.get(unit);
+		}
+		return tensRoman + unitRoman;
+	}
+
 }
