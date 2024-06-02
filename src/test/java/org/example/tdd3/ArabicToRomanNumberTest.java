@@ -61,4 +61,38 @@ class ArabicToRomanNumberTest {
 		Assertions.assertEquals("XC", ArabicToRomanNumber.convert(90));
 	}
 
+	@Test
+	void cents_conversion_arabic_to_roman() {
+		//Assert
+		Assertions.assertEquals("C", ArabicToRomanNumber.convert(100));
+		//Assert
+		Assertions.assertEquals("CC", ArabicToRomanNumber.convert(200));
+		//Assert
+		Assertions.assertEquals("CCC", ArabicToRomanNumber.convert(300));
+		//Assert
+		Assertions.assertEquals("CD", ArabicToRomanNumber.convert(400));
+		//Assert
+		Assertions.assertEquals("D", ArabicToRomanNumber.convert(500));
+		//Assert
+		Assertions.assertEquals("DC", ArabicToRomanNumber.convert(600));
+		//Assert
+		Assertions.assertEquals("DCC", ArabicToRomanNumber.convert(700));
+		//Assert
+		Assertions.assertEquals("DCCC", ArabicToRomanNumber.convert(800));
+		//Assert
+		Assertions.assertEquals("CM", ArabicToRomanNumber.convert(900));
+	}
+
+	@Test
+	void randoman_tens_units_number_conversion_arabic_to_roman() {
+		//Assert
+		Assertions.assertEquals("XLVII", ArabicToRomanNumber.convert(47));
+		//assert
+		Assertions.assertEquals("XCIX", ArabicToRomanNumber.convert(99));
+		//assert
+		Assertions.assertEquals("XIII", ArabicToRomanNumber.convert(13));
+		//assert
+		Assertions.assertEquals("LXXI", ArabicToRomanNumber.convert(71));
+	}
+
 }
