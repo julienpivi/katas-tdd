@@ -3,8 +3,6 @@ package org.example.tdd3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * Given a positive integer number (eg 42) determine its Roman numeral representation as a String (eg "XLII").
  *
@@ -19,9 +17,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ArabicToRomanNumberTest {
 
-
 	@Test
-	void when_number_is_under_10() {
+	void units_conversion_arabic_to_roman() {
 		//Assert
 		Assertions.assertEquals("I", ArabicToRomanNumber.convert(1));
 		//Assert
@@ -42,6 +39,26 @@ class ArabicToRomanNumberTest {
 		Assertions.assertEquals("IX", ArabicToRomanNumber.convert(9));
 	}
 
-
+	@Test
+	void tens_conversion_arabic_to_roman() {
+		//Assert
+		Assertions.assertEquals("X", ArabicToRomanNumber.convert(10));
+		//Assert
+		Assertions.assertEquals("XX", ArabicToRomanNumber.convert(20));
+		//Assert
+		Assertions.assertEquals("XXX", ArabicToRomanNumber.convert(30));
+		//Assert
+		Assertions.assertEquals("XL", ArabicToRomanNumber.convert(40));
+		//Assert
+		Assertions.assertEquals("L", ArabicToRomanNumber.convert(50));
+		//Assert
+		Assertions.assertEquals("LX", ArabicToRomanNumber.convert(60));
+		//Assert
+		Assertions.assertEquals("LXX", ArabicToRomanNumber.convert(70));
+		//Assert
+		Assertions.assertEquals("LXXX", ArabicToRomanNumber.convert(80));
+		//Assert
+		Assertions.assertEquals("XC", ArabicToRomanNumber.convert(90));
+	}
 
 }
