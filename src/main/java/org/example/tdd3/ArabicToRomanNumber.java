@@ -43,7 +43,22 @@ public class ArabicToRomanNumber {
 
 	public static String convert(int number) {
 		if (number/100 >= 1) {
-			return arabicCentsToRomanCents.get(number);
+			int cents = Math.divideExact(number, 100);
+			String centsRoman = arabicCentsToRomanCents.get(cents * 100);
+			int floorMod = Math.floorMod(number, 100);
+			String floorRoman = "";
+			if(floorMod > 0) {
+				int tens = Math.divideExact(floorMod, 10);
+				String tensRoman = arabicTensToRomanTens.get(tens * 10);
+				int unit = Math.floorMod(floorMod, 10);
+				String unitRoman="";
+				if(unit > 0) {
+					unitRoman = arabicUnitsToRomanUnits.get(unit);
+				}
+				floorRoman = tensRoman + unitRoman;
+			}
+
+			return centsRoman + floorRoman;
 		}
 		if(number/10 >= 1) {
 			int tens = Math.divideExact(number, 10);

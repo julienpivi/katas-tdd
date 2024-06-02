@@ -95,4 +95,17 @@ class ArabicToRomanNumberTest {
 		Assertions.assertEquals("LXXI", ArabicToRomanNumber.convert(71));
 	}
 
+	@Test
+	void randoman_cents_tens_units_number_conversion_arabic_to_roman() {
+		//Assert
+		Assertions.assertEquals("CLIX", ArabicToRomanNumber.convert(159));
+		//Assert
+		Assertions.assertEquals("CCCXII", ArabicToRomanNumber.convert(312));
+		//Assert
+		Assertions.assertEquals("CDXCVII", ArabicToRomanNumber.convert(497));
+		//Assert
+		Assertions.assertEquals("CMLXIV", ArabicToRomanNumber.convert(964));
+
+	}
+
 }
