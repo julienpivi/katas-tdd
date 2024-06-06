@@ -11,6 +11,10 @@ public class ArabicToRomanNumberWithTPP {
 			romanNumberBuilder.append("X");
 		}
 
+		if(divided == 2) {
+			romanNumberBuilder.append("XX");
+		}
+
 		String[] unitRomanNumber = new String[] {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
 		romanNumberBuilder.append(unitRomanNumber[remainder]);
 

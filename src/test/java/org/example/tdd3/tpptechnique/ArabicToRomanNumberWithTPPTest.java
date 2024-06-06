@@ -64,9 +64,12 @@ class ArabicToRomanNumberWithTPPTest {
 		Assertions.assertEquals("XVII", ArabicToRomanNumberWithTPP.convert(17));
 		Assertions.assertEquals("XVIII", ArabicToRomanNumberWithTPP.convert(18));
 		Assertions.assertEquals("XIX", ArabicToRomanNumberWithTPP.convert(19));
+	}
 
-
-
+	@Test
+	void twenty_conversion() {
+		//assert
+		Assertions.assertEquals("XX", ArabicToRomanNumberWithTPP.convert(20));
 	}
 
 
