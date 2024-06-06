@@ -23,5 +23,11 @@ public class ArabicToRomanNumberWithTPPTest {
 		Assertions.assertEquals("II", ArabicToRomanNumberWithTPP.convert(2));
 	}
 
+	@Test
+	public void three_conversion() {
+		//assert
+		Assertions.assertEquals("III", ArabicToRomanNumberWithTPP.convert(3));
+	}
+
 
 }
