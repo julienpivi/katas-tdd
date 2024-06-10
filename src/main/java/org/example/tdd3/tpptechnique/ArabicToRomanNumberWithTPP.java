@@ -6,20 +6,12 @@ public class ArabicToRomanNumberWithTPP {
 		int divided = number/10;
 		int remainder = number % 10;
 		StringBuilder romanNumberBuilder = new StringBuilder();
-
-		if(divided == 1) {
-			romanNumberBuilder.append("X");
-		}
-
-		if(divided == 2) {
-			romanNumberBuilder.append("XX");
-		}
-
-		if(divided == 3) {
-			romanNumberBuilder.append("XXX");
-		}
-
+		String[] tenRomanNumber = new String[] { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
 		String[] unitRomanNumber = new String[] {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+
+		if(divided > 0) {
+			romanNumberBuilder.append(tenRomanNumber[divided]);
+		}
 		romanNumberBuilder.append(unitRomanNumber[remainder]);
 
 		return romanNumberBuilder.toString();
