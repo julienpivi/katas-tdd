@@ -107,4 +107,16 @@ class ArabicToRomanNumberWithTPPTest {
 		Assertions.assertEquals("XXXIX", ArabicToRomanNumberWithTPP.convert(39));
 	}
 
+
+	@Test
+	void random_conversion() {
+		//assert
+		Assertions.assertEquals("XLVI", ArabicToRomanNumberWithTPP.convert(46));
+		Assertions.assertEquals("XCII", ArabicToRomanNumberWithTPP.convert(92));
+		Assertions.assertEquals("LXVIII", ArabicToRomanNumberWithTPP.convert(68));
+		Assertions.assertEquals("LXXI", ArabicToRomanNumberWithTPP.convert(71));
+		Assertions.assertEquals("LV", ArabicToRomanNumberWithTPP.convert(55));
+		Assertions.assertEquals("LXXX", ArabicToRomanNumberWithTPP.convert(80));
+	}
+
 }
