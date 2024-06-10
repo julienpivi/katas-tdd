@@ -87,4 +87,24 @@ class ArabicToRomanNumberWithTPPTest {
 	}
 
 
+	@Test
+	void thirty_conversion() {
+		//assert
+		Assertions.assertEquals("XXX", ArabicToRomanNumberWithTPP.convert(30));
+	}
+
+	@Test
+	void thirty_one_to_thirty_nine_conversion() {
+		//assert
+		Assertions.assertEquals("XXXI", ArabicToRomanNumberWithTPP.convert(31));
+		Assertions.assertEquals("XXXII", ArabicToRomanNumberWithTPP.convert(32));
+		Assertions.assertEquals("XXXIII", ArabicToRomanNumberWithTPP.convert(33));
+		Assertions.assertEquals("XXXIV", ArabicToRomanNumberWithTPP.convert(34));
+		Assertions.assertEquals("XXXV", ArabicToRomanNumberWithTPP.convert(35));
+		Assertions.assertEquals("XXXVI", ArabicToRomanNumberWithTPP.convert(36));
+		Assertions.assertEquals("XXXVII", ArabicToRomanNumberWithTPP.convert(37));
+		Assertions.assertEquals("XXXVIII", ArabicToRomanNumberWithTPP.convert(38));
+		Assertions.assertEquals("XXXIX", ArabicToRomanNumberWithTPP.convert(39));
+	}
+
 }
