@@ -11,6 +11,10 @@ public class RomanConverter {
 			result += "I";
 		}
 
+		if (number > 2) {
+			result += "I";
+		}
+
 		return result;
 	}
 }

@@ -9,6 +9,7 @@ class ArabicToRomanNumberCorrectionTest {
 	void testCase() {
 		convertNumberToRoman(1, "I");
 		convertNumberToRoman(2, "II");
+		convertNumberToRoman(3, "III");
 	}
 
 	private void convertNumberToRoman(int number, String expected) {
