@@ -2,19 +2,10 @@ package org.example.tdd3.tpptechnique;
 
 public class RomanConverter {
 
-	//6 unconditional -> conditional
+	private static String[] results = { "I", "II", "III", "IV"};
+
+	//7 variable -> array
 	public String convert(int number) {
-
-		String result = "I";
-
-		if (number > 1) {
-			result += "I";
-		}
-
-		if (number > 2) {
-			result += "I";
-		}
-
-		return result;
+		return results[number - 1];
 	}
 }
