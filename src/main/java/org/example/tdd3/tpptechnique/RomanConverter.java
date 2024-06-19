@@ -2,8 +2,15 @@ package org.example.tdd3.tpptechnique;
 
 public class RomanConverter {
 
-	//2 nil -> constant
+	//6 unconditional -> conditional
 	public String convert(int number) {
-		return "I";
+
+		String result = "I";
+
+		if (number > 1) {
+			result += "I";
+		}
+
+		return result;
 	}
 }
