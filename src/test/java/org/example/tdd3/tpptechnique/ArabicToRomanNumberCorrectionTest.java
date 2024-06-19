@@ -15,6 +15,15 @@ class ArabicToRomanNumberCorrectionTest {
 		convertNumberToRoman(6, "VI");
 		convertNumberToRoman(7, "VII");
 		convertNumberToRoman(8, "VIII");
+		convertNumberToRoman(9, "IX");
+		convertNumberToRoman(10, "X");
+		convertNumberToRoman(11, "XI");
+		convertNumberToRoman(17, "XVII");
+		convertNumberToRoman(25, "XXV");
+		convertNumberToRoman(39, "XXXIX");
+
+	/*	convertNumberToRoman(40, "XL");
+		convertNumberToRoman(44, "XLIV");*/
 	}
 
 	private void convertNumberToRoman(int number, String expected) {
