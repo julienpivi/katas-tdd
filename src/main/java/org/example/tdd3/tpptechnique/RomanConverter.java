@@ -6,7 +6,11 @@ public class RomanConverter {
 
 	private static final Map<Integer, String> results = Map.of(
 			1, "I",
-			4, "IV"
+			4, "IV",
+			5, "V",
+			6, "VI",
+			7, "VII",
+			8, "VIII"
 	);
 
 	//9 statement -> tail recursion
