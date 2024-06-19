@@ -21,9 +21,8 @@ class ArabicToRomanNumberCorrectionTest {
 		convertNumberToRoman(17, "XVII");
 		convertNumberToRoman(25, "XXV");
 		convertNumberToRoman(39, "XXXIX");
-
-	/*	convertNumberToRoman(40, "XL");
-		convertNumberToRoman(44, "XLIV");*/
+		convertNumberToRoman(40, "XL");
+		convertNumberToRoman(44, "XLIV");
 	}
 
 	private void convertNumberToRoman(int number, String expected) {

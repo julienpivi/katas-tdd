@@ -9,7 +9,8 @@ public class RomanConverter {
 			4, "IV",
 			5, "V",
 			9, "IX",
-			10, "X"
+			10, "X",
+			40, "XL"
 
 
 	);
@@ -19,6 +20,10 @@ public class RomanConverter {
 
 		if(results.containsKey(number)) {
 			return results.get(number);
+		}
+
+		if(number > 40) {
+			return results.get(40) + convert(number - 40);
 		}
 
 		if(number > 10) {
