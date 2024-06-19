@@ -4,15 +4,18 @@ import java.util.Map;
 
 public class RomanConverter {
 
-	private static Map<Integer, String> results = Map.of(
+	private static final Map<Integer, String> results = Map.of(
 			1, "I",
-			2, "II",
-			3, "III",
 			4, "IV"
 	);
 
-	//8 array -> collection
+	//9 statement -> tail recursion
 	public String convert(int number) {
-		return results.get(number);
+
+		if(results.containsKey(number)) {
+			return results.get(number);
+		}
+
+		return results.get(1) + convert(number - 1);
 	}
 }
