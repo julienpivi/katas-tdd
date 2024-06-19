@@ -3,7 +3,7 @@ package org.example.tdd3.tpptechnique;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class ArabicToRomanNumberCorrectionTest {
+class ArabicToRomanNumberCorrectionTest {
 
 	@Test
 	void testCase() {

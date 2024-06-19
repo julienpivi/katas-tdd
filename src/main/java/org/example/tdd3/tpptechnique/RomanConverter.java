@@ -2,8 +2,8 @@ package org.example.tdd3.tpptechnique;
 
 public class RomanConverter {
 
-	//1 nil
+	//2 nil -> constant
 	public String convert(int number) {
-		return null;
+		return "I";
 	}
 }
