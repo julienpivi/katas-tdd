@@ -9,7 +9,7 @@ class ArabicToRomanNumberCorrectionTest {
 	void testCase() {
 		convertNumberToRoman(1, "I");
 		convertNumberToRoman(2, "II");
-		convertNumberToRoman(3, "III");
+		convertNumberToRoman(3, "III"); // we spot tail recursion
 		convertNumberToRoman(4, "IV");
 	}
 

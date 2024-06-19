@@ -1,11 +1,18 @@
 package org.example.tdd3.tpptechnique;
 
+import java.util.Map;
+
 public class RomanConverter {
 
-	private static String[] results = { "I", "II", "III", "IV"};
+	private static Map<Integer, String> results = Map.of(
+			1, "I",
+			2, "II",
+			3, "III",
+			4, "IV"
+	);
 
-	//7 variable -> array
+	//8 array -> collection
 	public String convert(int number) {
-		return results[number - 1];
+		return results.get(number);
 	}
 }
