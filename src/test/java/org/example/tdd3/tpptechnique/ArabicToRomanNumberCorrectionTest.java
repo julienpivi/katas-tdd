@@ -8,6 +8,7 @@ class ArabicToRomanNumberCorrectionTest {
 	@Test
 	void testCase() {
 		convertNumberToRoman(1, "I");
+		convertNumberToRoman(2, "II");
 	}
 
 	private void convertNumberToRoman(int number, String expected) {
