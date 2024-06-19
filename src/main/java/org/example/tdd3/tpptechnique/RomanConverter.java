@@ -7,10 +7,7 @@ public class RomanConverter {
 	private static final Map<Integer, String> results = Map.of(
 			1, "I",
 			4, "IV",
-			5, "V",
-			6, "VI",
-			7, "VII",
-			8, "VIII"
+			5, "V"
 	);
 
 	//9 statement -> tail recursion
@@ -18,6 +15,10 @@ public class RomanConverter {
 
 		if(results.containsKey(number)) {
 			return results.get(number);
+		}
+
+		if(number > 5) {
+			return results.get(5) + convert(number - 5);
 		}
 
 		return results.get(1) + convert(number - 1);
