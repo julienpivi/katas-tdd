@@ -1,5 +1,6 @@
-package org.example.tdd3;
+package org.example.tdd3.arabicroman;
 
+import org.example.tdd3.arabicroman.tpptechnique.ArabicToRomanNumber;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

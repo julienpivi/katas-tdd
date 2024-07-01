@@ -1,4 +1,4 @@
-package org.example.tdd3.tpptechnique;
+package org.example.tdd3.arabicroman.tpptechnique;
 
 public class ArabicToRomanNumberWithTPP {
 

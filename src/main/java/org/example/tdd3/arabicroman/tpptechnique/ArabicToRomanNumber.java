@@ -1,4 +1,4 @@
-package org.example.tdd3;
+package org.example.tdd3.arabicroman.tpptechnique;
 
 import java.util.HashMap;
 import java.util.Map;
